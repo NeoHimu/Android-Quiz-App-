@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/question_background"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btGetAttendance"
+            android:text="Get Attendance!"
+            android:textSize="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btGetAttendance"
+        android:id="@+id/buttons"
+        android:weightSum="1"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btBackToLogin"
+            android:text="Back!"
+            android:textSize="40dp"
+            android:layout_weight="0.5"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btGoToQuiz"
+            android:text="Quiz!"
+            android:textSize="40dp"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addQues"
+            android:text="Add Questions"
+            android:textSize="40dp"
+            android:layout_below="@id/buttons"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addQues"
+            android:id="@+id/textboxes"
+            android:weightSum="2">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student 1"
+                android:layout_weight="1"
+                android:textSize="40dp"
+                android:id="@+id/student1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student 2"
+                android:layout_weight="1"
+                android:textSize="40dp"
+                android:id="@+id/student2"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textboxes"
+            android:text="Add Edge!"
+            android:textSize="40dp"
+            android:id="@+id/addEdgeButton"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/testTextView"
+            android:layout_below="@+id/addEdgeButton"
+            android:text="Test!"
+            android:textSize="40dp"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
